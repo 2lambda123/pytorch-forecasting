@@ -27,7 +27,7 @@ def _get_data_by_filename(fname: str) -> Path:
     # check if file exists - download if necessary
     if not full_fname.exists():
         url = BASE_URL + fname
-        download = requests.get(url, allow_redirects=True)
+        download = requests.get(url, allow_redirects=True, timeout=60)
         with open(full_fname, "wb") as file:
             file.write(download.content)
 
