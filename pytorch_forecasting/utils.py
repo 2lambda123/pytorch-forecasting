@@ -232,7 +232,7 @@ def unpack_sequence(sequence: Union[torch.Tensor, rnn.PackedSequence]) -> Tuple[
 
 
 def concat_sequences(
-    sequences: Union[List[torch.Tensor], List[rnn.PackedSequence]]
+    sequences: Union[List[torch.Tensor], List[rnn.PackedSequence]],
 ) -> Union[torch.Tensor, rnn.PackedSequence]:
     """
     Concatenate RNN sequences.
