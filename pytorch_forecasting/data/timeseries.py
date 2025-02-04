@@ -1672,7 +1672,7 @@ class TimeSeriesDataSet(Dataset):
 
     @staticmethod
     def _collate_fn(
-        batches: List[Tuple[Dict[str, torch.Tensor], torch.Tensor]]
+        batches: List[Tuple[Dict[str, torch.Tensor], torch.Tensor]],
     ) -> Tuple[Dict[str, torch.Tensor], torch.Tensor]:
         """
         Collate function to combine items into mini-batch for dataloader.

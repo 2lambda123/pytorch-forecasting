@@ -116,7 +116,7 @@ def _torch_cat_na(x: List[torch.Tensor]) -> torch.Tensor:
 
 
 def _concatenate_output(
-    output: List[Dict[str, List[Union[List[torch.Tensor], torch.Tensor, bool, int, str, np.ndarray]]]]
+    output: List[Dict[str, List[Union[List[torch.Tensor], torch.Tensor, bool, int, str, np.ndarray]]]],
 ) -> Dict[str, Union[torch.Tensor, np.ndarray, List[Union[torch.Tensor, int, bool, str]]]]:
     """
     Concatenate multiple batches of output dictionary.
